@@ -7,7 +7,6 @@ import pickle
 import numpy as np
 import lightgbm as lgb
 from functools import partial
-from sklearn.model_selection import RandomizedSearchCV
 from sklearn.metrics import roc_auc_score
 from sklearn.model_selection import cross_val_score, StratifiedKFold
 from hyperopt import hp, fmin, tpe, Trials, space_eval
@@ -118,5 +117,5 @@ results = np.array(results)
 times = np.array(times)
 
 # save everything to disk so we can make plots elsewhere
-with open(f"results/02_lightgbm_n_iter_{N_ITER}.pickle", "wb") as f:
+with open(f"results/02a_lightgbm_n_iter_{N_ITER}.pickle", "wb") as f:
     pickle.dump((results, times), f)
