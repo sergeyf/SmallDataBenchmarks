@@ -1,0 +1,749 @@
+name,model_type,metric_type,metric_value,train_time,dataset,budget,fold
+1_DecisionTree,Decision Tree,auc,-0.6666666666666667,0.96,glioma16,60,0
+2_DecisionTree,Decision Tree,auc,-0.6666666666666667,0.8,glioma16,60,0
+3_DecisionTree,Decision Tree,auc,-0.6666666666666667,0.96,glioma16,60,0
+4_Linear,Linear,auc,-0.6666666666666667,0.95,glioma16,60,0
+5_Default_LightGBM,LightGBM,auc,-0.8333333333333334,0.95,glioma16,60,0
+6_Default_Xgboost,Xgboost,auc,-1.0,1.12,glioma16,60,0
+7_Default_CatBoost,CatBoost,auc,-1.0,1.44,glioma16,60,0
+8_Default_RandomForest,Random Forest,auc,-0.5,1.33,glioma16,60,0
+9_Default_ExtraTrees,Extra Trees,auc,-0.8333333333333334,1.25,glioma16,60,0
+10_Default_NearestNeighbors,Nearest Neighbors,auc,-0.9166666666666667,0.95,glioma16,60,0
+20_LightGBM,LightGBM,auc,-0.5,0.92,glioma16,60,0
+11_Xgboost,Xgboost,auc,-0.5,1.09,glioma16,60,0
+29_CatBoost,CatBoost,auc,-1.0,1.23,glioma16,60,0
+38_RandomForest,Random Forest,auc,-0.5,1.29,glioma16,60,0
+47_ExtraTrees,Extra Trees,auc,-0.8333333333333334,1.32,glioma16,60,0
+56_NearestNeighbors,Nearest Neighbors,auc,-1.0,1.0,glioma16,60,0
+21_LightGBM,LightGBM,auc,-0.8333333333333334,1.0,glioma16,60,0
+12_Xgboost,Xgboost,auc,-0.8333333333333334,1.08,glioma16,60,0
+30_CatBoost,CatBoost,auc,-1.0,1.44,glioma16,60,0
+39_RandomForest,Random Forest,auc,-0.5,1.5,glioma16,60,0
+48_ExtraTrees,Extra Trees,auc,-0.5,1.33,glioma16,60,0
+57_NearestNeighbors,Nearest Neighbors,auc,-0.8333333333333334,1.02,glioma16,60,0
+22_LightGBM,LightGBM,auc,-1.0,1.3,glioma16,60,0
+13_Xgboost,Xgboost,auc,-1.0,1.15,glioma16,60,0
+31_CatBoost,CatBoost,auc,-1.0,1.24,glioma16,60,0
+40_RandomForest,Random Forest,auc,-0.5,1.42,glioma16,60,0
+7_Default_CatBoost_GoldenFeatures,CatBoost,auc,-1.0,8.29,glioma16,60,0
+58_CatBoost,CatBoost,auc,-1.0,1.28,glioma16,60,0
+59_CatBoost,CatBoost,auc,-1.0,1.26,glioma16,60,0
+60_Xgboost,Xgboost,auc,-0.8333333333333334,1.2,glioma16,60,0
+61_Xgboost,Xgboost,auc,-0.8333333333333334,1.25,glioma16,60,0
+62_CatBoost,CatBoost,auc,-1.0,1.32,glioma16,60,0
+63_CatBoost,CatBoost,auc,-1.0,1.42,glioma16,60,0
+64_Xgboost,Xgboost,auc,-1.0,1.24,glioma16,60,0
+65_NearestNeighbors,Nearest Neighbors,auc,-1.0,1.14,glioma16,60,0
+66_CatBoost,CatBoost,auc,-1.0,1.36,glioma16,60,0
+Ensemble,Ensemble,auc,-1.0,3.63,glioma16,60,0
+1_DecisionTree,Decision Tree,auc,-1.0,1.37,glioma16,60,1
+2_DecisionTree,Decision Tree,auc,-1.0,1.62,glioma16,60,1
+3_DecisionTree,Decision Tree,auc,-1.0,1.49,glioma16,60,1
+4_Linear,Linear,auc,-1.0,1.46,glioma16,60,1
+5_Default_LightGBM,LightGBM,auc,-1.0,1.52,glioma16,60,1
+6_Default_Xgboost,Xgboost,auc,-1.0,1.66,glioma16,60,1
+7_Default_CatBoost,CatBoost,auc,-1.0,1.69,glioma16,60,1
+8_Default_RandomForest,Random Forest,auc,-0.5,2.07,glioma16,60,1
+9_Default_ExtraTrees,Extra Trees,auc,-1.0,1.9,glioma16,60,1
+10_Default_NearestNeighbors,Nearest Neighbors,auc,-1.0,1.54,glioma16,60,1
+20_LightGBM,LightGBM,auc,-0.5,1.58,glioma16,60,1
+11_Xgboost,Xgboost,auc,-0.5,1.61,glioma16,60,1
+29_CatBoost,CatBoost,auc,-1.0,1.79,glioma16,60,1
+38_RandomForest,Random Forest,auc,-0.5,1.9,glioma16,60,1
+47_ExtraTrees,Extra Trees,auc,-1.0,1.92,glioma16,60,1
+56_NearestNeighbors,Nearest Neighbors,auc,-1.0,1.6,glioma16,60,1
+21_LightGBM,LightGBM,auc,-1.0,1.65,glioma16,60,1
+12_Xgboost,Xgboost,auc,-1.0,1.7,glioma16,60,1
+30_CatBoost,CatBoost,auc,-1.0,1.85,glioma16,60,1
+39_RandomForest,Random Forest,auc,-0.5,1.93,glioma16,60,1
+1_DecisionTree_GoldenFeatures,Decision Tree,auc,-1.0,1.86,glioma16,60,1
+1_DecisionTree_KMeansFeatures,Decision Tree,auc,-1.0,1.74,glioma16,60,1
+57_DecisionTree,Decision Tree,auc,-1.0,1.57,glioma16,60,1
+58_DecisionTree,Decision Tree,auc,-1.0,1.61,glioma16,60,1
+59_DecisionTree,Decision Tree,auc,-1.0,1.59,glioma16,60,1
+60_LightGBM,LightGBM,auc,-1.0,1.69,glioma16,60,1
+61_LightGBM,LightGBM,auc,-1.0,1.8,glioma16,60,1
+62_Xgboost,Xgboost,auc,-1.0,1.82,glioma16,60,1
+63_LightGBM,LightGBM,auc,-1.0,1.82,glioma16,60,1
+64_LightGBM,LightGBM,auc,-1.0,1.83,glioma16,60,1
+65_Xgboost,Xgboost,auc,-0.5,1.81,glioma16,60,1
+Ensemble,Ensemble,auc,-1.0,2.78,glioma16,60,1
+1_DecisionTree,Decision Tree,auc,-1.0,2.63,glioma16,60,2
+2_DecisionTree,Decision Tree,auc,-0.8333333333333334,1.57,glioma16,60,2
+3_DecisionTree,Decision Tree,auc,-0.8333333333333334,1.37,glioma16,60,2
+4_Linear,Linear,auc,-1.0,1.37,glioma16,60,2
+5_Default_LightGBM,LightGBM,auc,-1.0,1.44,glioma16,60,2
+6_Default_Xgboost,Xgboost,auc,-1.0,1.49,glioma16,60,2
+7_Default_CatBoost,CatBoost,auc,-1.0,1.59,glioma16,60,2
+8_Default_RandomForest,Random Forest,auc,-0.5,1.88,glioma16,60,2
+9_Default_ExtraTrees,Extra Trees,auc,-1.0,1.93,glioma16,60,2
+19_LightGBM,LightGBM,auc,-0.5,1.41,glioma16,60,2
+10_Xgboost,Xgboost,auc,-0.5,1.56,glioma16,60,2
+28_CatBoost,CatBoost,auc,-1.0,1.86,glioma16,60,2
+37_RandomForest,Random Forest,auc,-0.5,1.8,glioma16,60,2
+46_ExtraTrees,Extra Trees,auc,-1.0,2.0,glioma16,60,2
+55_NearestNeighbors,Nearest Neighbors,auc,-1.0,1.5,glioma16,60,2
+20_LightGBM,LightGBM,auc,-1.0,1.51,glioma16,60,2
+11_Xgboost,Xgboost,auc,-1.0,1.57,glioma16,60,2
+29_CatBoost,CatBoost,auc,-1.0,1.96,glioma16,60,2
+38_RandomForest,Random Forest,auc,-0.5,1.98,glioma16,60,2
+1_DecisionTree_GoldenFeatures,Decision Tree,auc,-1.0,1.65,glioma16,60,2
+4_Linear_GoldenFeatures,Linear,auc,-1.0,1.53,glioma16,60,2
+1_DecisionTree_KMeansFeatures,Decision Tree,auc,-0.8333333333333334,1.61,glioma16,60,2
+56_DecisionTree,Decision Tree,auc,-0.6666666666666667,1.53,glioma16,60,2
+57_Xgboost,Xgboost,auc,-1.0,1.67,glioma16,60,2
+58_Xgboost,Xgboost,auc,-1.0,1.66,glioma16,60,2
+59_LightGBM,LightGBM,auc,-1.0,1.8,glioma16,60,2
+60_LightGBM,LightGBM,auc,-1.0,1.72,glioma16,60,2
+61_CatBoost,CatBoost,auc,-1.0,1.8,glioma16,60,2
+62_Xgboost,Xgboost,auc,-0.5,1.87,glioma16,60,2
+63_LightGBM,LightGBM,auc,-1.0,1.64,glioma16,60,2
+64_LightGBM,LightGBM,auc,-1.0,1.64,glioma16,60,2
+Ensemble,Ensemble,auc,-1.0,2.75,glioma16,60,2
+1_DecisionTree,Decision Tree,auc,-0.8333333333333334,2.41,glioma16,60,3
+2_DecisionTree,Decision Tree,auc,-0.8333333333333334,1.34,glioma16,60,3
+3_DecisionTree,Decision Tree,auc,-0.8333333333333334,1.34,glioma16,60,3
+4_Linear,Linear,auc,-0.6666666666666667,1.42,glioma16,60,3
+5_Default_LightGBM,LightGBM,auc,-0.8333333333333334,1.45,glioma16,60,3
+6_Default_Xgboost,Xgboost,auc,-1.0,1.67,glioma16,60,3
+7_Default_CatBoost,CatBoost,auc,-1.0,1.64,glioma16,60,3
+8_Default_RandomForest,Random Forest,auc,-0.5,1.94,glioma16,60,3
+9_Default_ExtraTrees,Extra Trees,auc,-0.8333333333333334,1.84,glioma16,60,3
+10_Default_NearestNeighbors,Nearest Neighbors,auc,-0.8333333333333334,1.47,glioma16,60,3
+20_LightGBM,LightGBM,auc,-0.5,1.57,glioma16,60,3
+11_Xgboost,Xgboost,auc,-0.5,1.54,glioma16,60,3
+29_CatBoost,CatBoost,auc,-1.0,1.77,glioma16,60,3
+38_RandomForest,Random Forest,auc,-0.5,1.84,glioma16,60,3
+47_ExtraTrees,Extra Trees,auc,-1.0,1.9,glioma16,60,3
+56_NearestNeighbors,Nearest Neighbors,auc,-0.8333333333333334,1.62,glioma16,60,3
+21_LightGBM,LightGBM,auc,-0.8333333333333334,1.58,glioma16,60,3
+12_Xgboost,Xgboost,auc,-1.0,1.63,glioma16,60,3
+30_CatBoost,CatBoost,auc,-1.0,1.8,glioma16,60,3
+39_RandomForest,Random Forest,auc,-0.5,1.91,glioma16,60,3
+7_Default_CatBoost_GoldenFeatures,CatBoost,auc,-1.0,2.07,glioma16,60,3
+7_Default_CatBoost_KMeansFeatures,CatBoost,auc,-1.0,1.96,glioma16,60,3
+57_CatBoost,CatBoost,auc,-1.0,1.99,glioma16,60,3
+58_Xgboost,Xgboost,auc,-0.8333333333333334,1.66,glioma16,60,3
+59_Xgboost,Xgboost,auc,-1.0,1.91,glioma16,60,3
+60_CatBoost,CatBoost,auc,-1.0,1.94,glioma16,60,3
+61_CatBoost,CatBoost,auc,-1.0,1.8,glioma16,60,3
+62_CatBoost,CatBoost,auc,-1.0,1.84,glioma16,60,3
+63_CatBoost,CatBoost,auc,-1.0,1.8,glioma16,60,3
+64_CatBoost,CatBoost,auc,-1.0,1.82,glioma16,60,3
+Ensemble,Ensemble,auc,-1.0,2.51,glioma16,60,3
+1_DecisionTree,Decision Tree,auc,-0.6666666666666667,2.5,glioma16,300,0
+2_DecisionTree,Decision Tree,auc,-0.6666666666666667,1.43,glioma16,300,0
+3_DecisionTree,Decision Tree,auc,-0.6666666666666667,1.42,glioma16,300,0
+4_Linear,Linear,auc,-0.6666666666666667,1.56,glioma16,300,0
+5_Default_LightGBM,LightGBM,auc,-0.8333333333333334,1.61,glioma16,300,0
+6_Default_Xgboost,Xgboost,auc,-1.0,1.63,glioma16,300,0
+7_Default_CatBoost,CatBoost,auc,-1.0,1.6,glioma16,300,0
+8_Default_RandomForest,Random Forest,auc,-0.5,1.98,glioma16,300,0
+9_Default_ExtraTrees,Extra Trees,auc,-0.8333333333333334,2.0,glioma16,300,0
+10_Default_NearestNeighbors,Nearest Neighbors,auc,-0.9166666666666667,1.47,glioma16,300,0
+20_LightGBM,LightGBM,auc,-0.5,1.43,glioma16,300,0
+11_Xgboost,Xgboost,auc,-0.5,1.5,glioma16,300,0
+29_CatBoost,CatBoost,auc,-1.0,1.75,glioma16,300,0
+38_RandomForest,Random Forest,auc,-0.5,1.86,glioma16,300,0
+47_ExtraTrees,Extra Trees,auc,-0.8333333333333334,1.85,glioma16,300,0
+56_NearestNeighbors,Nearest Neighbors,auc,-1.0,1.51,glioma16,300,0
+21_LightGBM,LightGBM,auc,-0.8333333333333334,1.6,glioma16,300,0
+12_Xgboost,Xgboost,auc,-0.8333333333333334,1.59,glioma16,300,0
+30_CatBoost,CatBoost,auc,-1.0,1.92,glioma16,300,0
+39_RandomForest,Random Forest,auc,-0.5,1.87,glioma16,300,0
+48_ExtraTrees,Extra Trees,auc,-0.5,1.84,glioma16,300,0
+57_NearestNeighbors,Nearest Neighbors,auc,-0.8333333333333334,1.55,glioma16,300,0
+22_LightGBM,LightGBM,auc,-1.0,1.59,glioma16,300,0
+13_Xgboost,Xgboost,auc,-1.0,1.8,glioma16,300,0
+31_CatBoost,CatBoost,auc,-1.0,1.81,glioma16,300,0
+40_RandomForest,Random Forest,auc,-0.5,1.95,glioma16,300,0
+49_ExtraTrees,Extra Trees,auc,-0.5,1.91,glioma16,300,0
+58_NearestNeighbors,Nearest Neighbors,auc,-1.0,1.62,glioma16,300,0
+23_LightGBM,LightGBM,auc,-0.5,1.69,glioma16,300,0
+14_Xgboost,Xgboost,auc,-0.5,1.63,glioma16,300,0
+32_CatBoost,CatBoost,auc,-1.0,1.83,glioma16,300,0
+41_RandomForest,Random Forest,auc,-0.5,1.96,glioma16,300,0
+50_ExtraTrees,Extra Trees,auc,-0.5,1.97,glioma16,300,0
+59_NearestNeighbors,Nearest Neighbors,auc,-1.0,1.69,glioma16,300,0
+24_LightGBM,LightGBM,auc,-0.8333333333333334,1.67,glioma16,300,0
+15_Xgboost,Xgboost,auc,-0.5,1.7,glioma16,300,0
+33_CatBoost,CatBoost,auc,-1.0,1.9,glioma16,300,0
+42_RandomForest,Random Forest,auc,-0.8333333333333334,2.25,glioma16,300,0
+51_ExtraTrees,Extra Trees,auc,-1.0,2.32,glioma16,300,0
+60_NearestNeighbors,Nearest Neighbors,auc,-1.0,1.79,glioma16,300,0
+25_LightGBM,LightGBM,auc,-0.5,1.9,glioma16,300,0
+16_Xgboost,Xgboost,auc,-0.8333333333333334,1.78,glioma16,300,0
+34_CatBoost,CatBoost,auc,-1.0,2.08,glioma16,300,0
+43_RandomForest,Random Forest,auc,-0.5,2.07,glioma16,300,0
+52_ExtraTrees,Extra Trees,auc,-0.5,2.08,glioma16,300,0
+61_NearestNeighbors,Nearest Neighbors,auc,-0.8333333333333334,1.77,glioma16,300,0
+26_LightGBM,LightGBM,auc,-0.8333333333333334,1.84,glioma16,300,0
+17_Xgboost,Xgboost,auc,-0.5,1.99,glioma16,300,0
+35_CatBoost,CatBoost,auc,-1.0,1.95,glioma16,300,0
+44_RandomForest,Random Forest,auc,-0.5,2.36,glioma16,300,0
+53_ExtraTrees,Extra Trees,auc,-0.5,2.1,glioma16,300,0
+62_NearestNeighbors,Nearest Neighbors,auc,-1.0,1.89,glioma16,300,0
+27_LightGBM,LightGBM,auc,-1.0,1.91,glioma16,300,0
+18_Xgboost,Xgboost,auc,-0.5,1.86,glioma16,300,0
+36_CatBoost,CatBoost,auc,-1.0,2.05,glioma16,300,0
+45_RandomForest,Random Forest,auc,-0.5,2.18,glioma16,300,0
+54_ExtraTrees,Extra Trees,auc,-0.8333333333333334,2.3,glioma16,300,0
+28_LightGBM,LightGBM,auc,-0.5,1.82,glioma16,300,0
+19_Xgboost,Xgboost,auc,-0.5,1.87,glioma16,300,0
+37_CatBoost,CatBoost,auc,-1.0,2.07,glioma16,300,0
+46_RandomForest,Random Forest,auc,-0.5,2.22,glioma16,300,0
+55_ExtraTrees,Extra Trees,auc,-0.5,2.19,glioma16,300,0
+7_Default_CatBoost_GoldenFeatures,CatBoost,auc,-1.0,2.27,glioma16,300,0
+6_Default_Xgboost_GoldenFeatures,Xgboost,auc,-1.0,2.01,glioma16,300,0
+29_CatBoost_GoldenFeatures,CatBoost,auc,-1.0,2.29,glioma16,300,0
+7_Default_CatBoost_KMeansFeatures,CatBoost,auc,-1.0,2.26,glioma16,300,0
+6_Default_Xgboost_KMeansFeatures,Xgboost,auc,-1.0,2.3,glioma16,300,0
+29_CatBoost_KMeansFeatures,CatBoost,auc,-1.0,2.35,glioma16,300,0
+7_Default_CatBoost_RandomFeature,CatBoost,auc,-0.9166666666666667,2.63,glioma16,300,0
+7_Default_CatBoost_SelectedFeatures,CatBoost,auc,-1.0,2.15,glioma16,300,0
+6_Default_Xgboost_SelectedFeatures,Xgboost,auc,-1.0,2.08,glioma16,300,0
+22_LightGBM_SelectedFeatures,LightGBM,auc,-1.0,1.99,glioma16,300,0
+51_ExtraTrees_SelectedFeatures,Extra Trees,auc,-0.8333333333333334,2.52,glioma16,300,0
+42_RandomForest_SelectedFeatures,Random Forest,auc,-0.8333333333333334,2.42,glioma16,300,0
+63_CatBoost,CatBoost,auc,-1.0,2.29,glioma16,300,0
+64_CatBoost,CatBoost,auc,-1.0,2.19,glioma16,300,0
+65_Xgboost,Xgboost,auc,-0.8333333333333334,2.14,glioma16,300,0
+66_CatBoost,CatBoost,auc,-1.0,2.27,glioma16,300,0
+67_CatBoost,CatBoost,auc,-1.0,2.55,glioma16,300,0
+68_CatBoost,CatBoost,auc,-1.0,2.31,glioma16,300,0
+69_CatBoost,CatBoost,auc,-1.0,2.44,glioma16,300,0
+70_LightGBM,LightGBM,auc,-1.0,2.1,glioma16,300,0
+71_Xgboost,Xgboost,auc,-0.8333333333333334,2.23,glioma16,300,0
+72_ExtraTrees,Extra Trees,auc,-0.8333333333333334,2.51,glioma16,300,0
+73_ExtraTrees,Extra Trees,auc,-0.8333333333333334,2.66,glioma16,300,0
+74_LightGBM,LightGBM,auc,-1.0,2.26,glioma16,300,0
+75_Xgboost_GoldenFeatures,Xgboost,auc,-1.0,2.34,glioma16,300,0
+76_LightGBM_SelectedFeatures,LightGBM,auc,-1.0,2.18,glioma16,300,0
+77_ExtraTrees,Extra Trees,auc,-0.8333333333333334,2.63,glioma16,300,0
+78_ExtraTrees,Extra Trees,auc,-0.8333333333333334,2.73,glioma16,300,0
+79_RandomForest,Random Forest,auc,-0.8333333333333334,2.58,glioma16,300,0
+80_RandomForest,Random Forest,auc,-0.8333333333333334,2.86,glioma16,300,0
+81_ExtraTrees,Extra Trees,auc,-0.8333333333333334,2.69,glioma16,300,0
+82_ExtraTrees,Extra Trees,auc,-0.8333333333333334,2.71,glioma16,300,0
+83_RandomForest_SelectedFeatures,Random Forest,auc,-0.8333333333333334,2.7,glioma16,300,0
+84_RandomForest_SelectedFeatures,Random Forest,auc,-0.8333333333333334,2.57,glioma16,300,0
+85_DecisionTree,Decision Tree,auc,-0.6666666666666667,2.12,glioma16,300,0
+86_DecisionTree,Decision Tree,auc,-0.6666666666666667,2.12,glioma16,300,0
+87_DecisionTree,Decision Tree,auc,-0.6666666666666667,2.38,glioma16,300,0
+88_DecisionTree,Decision Tree,auc,-0.6666666666666667,2.14,glioma16,300,0
+89_RandomForest,Random Forest,auc,-0.5,2.78,glioma16,300,0
+90_RandomForest,Random Forest,auc,-0.5,2.58,glioma16,300,0
+91_CatBoost,CatBoost,auc,-1.0,2.46,glioma16,300,0
+92_Xgboost,Xgboost,auc,-1.0,2.33,glioma16,300,0
+93_CatBoost,CatBoost,auc,-1.0,2.5,glioma16,300,0
+94_CatBoost,CatBoost,auc,-1.0,2.49,glioma16,300,0
+95_CatBoost,CatBoost,auc,-1.0,2.48,glioma16,300,0
+96_LightGBM,LightGBM,auc,-0.8333333333333334,2.3,glioma16,300,0
+97_Xgboost,Xgboost,auc,-1.0,2.34,glioma16,300,0
+98_Xgboost,Xgboost,auc,-0.8333333333333334,2.48,glioma16,300,0
+99_ExtraTrees,Extra Trees,auc,-1.0,2.63,glioma16,300,0
+100_ExtraTrees,Extra Trees,auc,-0.8333333333333334,2.65,glioma16,300,0
+101_LightGBM,LightGBM,auc,-0.8333333333333334,2.32,glioma16,300,0
+102_Xgboost_GoldenFeatures,Xgboost,auc,-1.0,2.44,glioma16,300,0
+103_LightGBM_SelectedFeatures,LightGBM,auc,-1.0,2.45,glioma16,300,0
+104_ExtraTrees,Extra Trees,auc,-0.8333333333333334,2.86,glioma16,300,0
+105_ExtraTrees,Extra Trees,auc,-0.5,2.84,glioma16,300,0
+106_ExtraTrees,Extra Trees,auc,-1.0,2.74,glioma16,300,0
+107_ExtraTrees,Extra Trees,auc,-0.8333333333333334,2.73,glioma16,300,0
+108_RandomForest_SelectedFeatures,Random Forest,auc,-1.0,2.86,glioma16,300,0
+109_RandomForest_SelectedFeatures,Random Forest,auc,-0.5,2.72,glioma16,300,0
+110_RandomForest,Random Forest,auc,-1.0,2.82,glioma16,300,0
+111_RandomForest,Random Forest,auc,-0.5,2.7,glioma16,300,0
+Ensemble,Ensemble,auc,-1.0,39.73,glioma16,300,0
+1_DecisionTree,Decision Tree,auc,-1.0,4.07,glioma16,300,1
+2_DecisionTree,Decision Tree,auc,-1.0,3.13,glioma16,300,1
+3_DecisionTree,Decision Tree,auc,-1.0,3.03,glioma16,300,1
+4_Linear,Linear,auc,-1.0,3.06,glioma16,300,1
+5_Default_LightGBM,LightGBM,auc,-1.0,3.21,glioma16,300,1
+6_Default_Xgboost,Xgboost,auc,-1.0,3.19,glioma16,300,1
+7_Default_CatBoost,CatBoost,auc,-1.0,3.55,glioma16,300,1
+8_Default_RandomForest,Random Forest,auc,-0.5,3.51,glioma16,300,1
+9_Default_ExtraTrees,Extra Trees,auc,-1.0,3.49,glioma16,300,1
+10_Default_NearestNeighbors,Nearest Neighbors,auc,-1.0,3.31,glioma16,300,1
+20_LightGBM,LightGBM,auc,-0.5,3.29,glioma16,300,1
+11_Xgboost,Xgboost,auc,-0.5,3.24,glioma16,300,1
+29_CatBoost,CatBoost,auc,-1.0,3.44,glioma16,300,1
+38_RandomForest,Random Forest,auc,-0.5,3.54,glioma16,300,1
+47_ExtraTrees,Extra Trees,auc,-1.0,3.57,glioma16,300,1
+56_NearestNeighbors,Nearest Neighbors,auc,-1.0,3.18,glioma16,300,1
+21_LightGBM,LightGBM,auc,-1.0,3.26,glioma16,300,1
+12_Xgboost,Xgboost,auc,-1.0,3.48,glioma16,300,1
+30_CatBoost,CatBoost,auc,-1.0,3.72,glioma16,300,1
+39_RandomForest,Random Forest,auc,-0.5,3.63,glioma16,300,1
+48_ExtraTrees,Extra Trees,auc,-0.5,3.68,glioma16,300,1
+57_NearestNeighbors,Nearest Neighbors,auc,-1.0,3.3,glioma16,300,1
+22_LightGBM,LightGBM,auc,-1.0,3.25,glioma16,300,1
+13_Xgboost,Xgboost,auc,-1.0,3.58,glioma16,300,1
+31_CatBoost,CatBoost,auc,-1.0,3.5,glioma16,300,1
+40_RandomForest,Random Forest,auc,-0.5,3.62,glioma16,300,1
+49_ExtraTrees,Extra Trees,auc,-0.5,3.72,glioma16,300,1
+58_NearestNeighbors,Nearest Neighbors,auc,-1.0,3.56,glioma16,300,1
+23_LightGBM,LightGBM,auc,-0.5,3.58,glioma16,300,1
+14_Xgboost,Xgboost,auc,-0.5,3.6,glioma16,300,1
+32_CatBoost,CatBoost,auc,-1.0,3.85,glioma16,300,1
+41_RandomForest,Random Forest,auc,-0.5,3.76,glioma16,300,1
+50_ExtraTrees,Extra Trees,auc,-0.5,3.68,glioma16,300,1
+59_NearestNeighbors,Nearest Neighbors,auc,-1.0,3.42,glioma16,300,1
+24_LightGBM,LightGBM,auc,-1.0,3.5,glioma16,300,1
+15_Xgboost,Xgboost,auc,-0.5,3.41,glioma16,300,1
+33_CatBoost,CatBoost,auc,-1.0,3.73,glioma16,300,1
+42_RandomForest,Random Forest,auc,-1.0,3.8,glioma16,300,1
+51_ExtraTrees,Extra Trees,auc,-1.0,3.74,glioma16,300,1
+60_NearestNeighbors,Nearest Neighbors,auc,-1.0,3.52,glioma16,300,1
+25_LightGBM,LightGBM,auc,-0.5,3.38,glioma16,300,1
+16_Xgboost,Xgboost,auc,-1.0,3.58,glioma16,300,1
+34_CatBoost,CatBoost,auc,-1.0,3.61,glioma16,300,1
+43_RandomForest,Random Forest,auc,-0.5,3.74,glioma16,300,1
+52_ExtraTrees,Extra Trees,auc,-0.5,3.72,glioma16,300,1
+61_NearestNeighbors,Nearest Neighbors,auc,-1.0,3.46,glioma16,300,1
+26_LightGBM,LightGBM,auc,-1.0,3.46,glioma16,300,1
+17_Xgboost,Xgboost,auc,-0.5,3.56,glioma16,300,1
+35_CatBoost,CatBoost,auc,-1.0,3.68,glioma16,300,1
+1_DecisionTree_GoldenFeatures,Decision Tree,auc,-1.0,10.6,glioma16,300,1
+2_DecisionTree_GoldenFeatures,Decision Tree,auc,-1.0,3.52,glioma16,300,1
+1_DecisionTree_KMeansFeatures,Decision Tree,auc,-1.0,3.76,glioma16,300,1
+2_DecisionTree_KMeansFeatures,Decision Tree,auc,-1.0,3.51,glioma16,300,1
+3_DecisionTree_KMeansFeatures,Decision Tree,auc,-1.0,3.68,glioma16,300,1
+1_DecisionTree_RandomFeature,Decision Tree,auc,-1.0,4.08,glioma16,300,1
+5_Default_LightGBM_SelectedFeatures,LightGBM,auc,-1.0,3.79,glioma16,300,1
+6_Default_Xgboost_SelectedFeatures,Xgboost,auc,-1.0,3.64,glioma16,300,1
+7_Default_CatBoost_SelectedFeatures,CatBoost,auc,-1.0,3.66,glioma16,300,1
+9_Default_ExtraTrees_SelectedFeatures,Extra Trees,auc,-1.0,4.06,glioma16,300,1
+42_RandomForest_SelectedFeatures,Random Forest,auc,-1.0,4.12,glioma16,300,1
+62_DecisionTree,Decision Tree,auc,-1.0,3.73,glioma16,300,1
+63_DecisionTree,Decision Tree,auc,-1.0,3.52,glioma16,300,1
+64_DecisionTree,Decision Tree,auc,-1.0,3.51,glioma16,300,1
+65_LightGBM,LightGBM,auc,-1.0,3.72,glioma16,300,1
+66_Xgboost,Xgboost,auc,-1.0,3.7,glioma16,300,1
+67_Xgboost,Xgboost,auc,-1.0,3.7,glioma16,300,1
+68_CatBoost,CatBoost,auc,-1.0,4.03,glioma16,300,1
+69_ExtraTrees,Extra Trees,auc,-1.0,4.15,glioma16,300,1
+70_ExtraTrees,Extra Trees,auc,-0.5,3.96,glioma16,300,1
+71_LightGBM,LightGBM,auc,-1.0,3.65,glioma16,300,1
+72_LightGBM,LightGBM,auc,-1.0,3.67,glioma16,300,1
+73_Xgboost,Xgboost,auc,-1.0,4.03,glioma16,300,1
+74_Xgboost,Xgboost,auc,-1.0,3.82,glioma16,300,1
+75_CatBoost,CatBoost,auc,-1.0,4.14,glioma16,300,1
+76_CatBoost,CatBoost,auc,-1.0,3.83,glioma16,300,1
+Ensemble,Ensemble,auc,-1.0,14.79,glioma16,300,1
+1_DecisionTree,Decision Tree,auc,-1.0,6.93,glioma16,300,2
+2_DecisionTree,Decision Tree,auc,-0.8333333333333334,2.15,glioma16,300,2
+3_DecisionTree,Decision Tree,auc,-0.8333333333333334,2.18,glioma16,300,2
+4_Linear,Linear,auc,-1.0,2.42,glioma16,300,2
+5_Default_LightGBM,LightGBM,auc,-1.0,2.39,glioma16,300,2
+6_Default_Xgboost,Xgboost,auc,-1.0,2.32,glioma16,300,2
+7_Default_CatBoost,CatBoost,auc,-1.0,2.43,glioma16,300,2
+8_Default_RandomForest,Random Forest,auc,-0.5,2.61,glioma16,300,2
+9_Default_ExtraTrees,Extra Trees,auc,-1.0,2.69,glioma16,300,2
+10_Default_NearestNeighbors,Nearest Neighbors,auc,-1.0,2.49,glioma16,300,2
+20_LightGBM,LightGBM,auc,-0.5,2.27,glioma16,300,2
+11_Xgboost,Xgboost,auc,-0.5,2.62,glioma16,300,2
+29_CatBoost,CatBoost,auc,-1.0,2.66,glioma16,300,2
+38_RandomForest,Random Forest,auc,-0.5,2.67,glioma16,300,2
+47_ExtraTrees,Extra Trees,auc,-1.0,2.69,glioma16,300,2
+56_NearestNeighbors,Nearest Neighbors,auc,-1.0,2.39,glioma16,300,2
+21_LightGBM,LightGBM,auc,-1.0,2.35,glioma16,300,2
+12_Xgboost,Xgboost,auc,-1.0,2.41,glioma16,300,2
+30_CatBoost,CatBoost,auc,-1.0,2.63,glioma16,300,2
+39_RandomForest,Random Forest,auc,-0.5,2.73,glioma16,300,2
+48_ExtraTrees,Extra Trees,auc,-0.5,2.69,glioma16,300,2
+57_NearestNeighbors,Nearest Neighbors,auc,-1.0,2.43,glioma16,300,2
+22_LightGBM,LightGBM,auc,-1.0,2.52,glioma16,300,2
+13_Xgboost,Xgboost,auc,-1.0,2.48,glioma16,300,2
+31_CatBoost,CatBoost,auc,-1.0,2.59,glioma16,300,2
+40_RandomForest,Random Forest,auc,-0.5,2.76,glioma16,300,2
+49_ExtraTrees,Extra Trees,auc,-0.5,2.75,glioma16,300,2
+58_NearestNeighbors,Nearest Neighbors,auc,-1.0,2.44,glioma16,300,2
+23_LightGBM,LightGBM,auc,-0.5,2.45,glioma16,300,2
+14_Xgboost,Xgboost,auc,-0.5,2.47,glioma16,300,2
+32_CatBoost,CatBoost,auc,-1.0,2.68,glioma16,300,2
+41_RandomForest,Random Forest,auc,-0.5,3.1,glioma16,300,2
+50_ExtraTrees,Extra Trees,auc,-0.5,3.02,glioma16,300,2
+59_NearestNeighbors,Nearest Neighbors,auc,-1.0,2.63,glioma16,300,2
+24_LightGBM,LightGBM,auc,-1.0,2.57,glioma16,300,2
+15_Xgboost,Xgboost,auc,-0.5,2.51,glioma16,300,2
+33_CatBoost,CatBoost,auc,-1.0,2.85,glioma16,300,2
+42_RandomForest,Random Forest,auc,-1.0,2.91,glioma16,300,2
+51_ExtraTrees,Extra Trees,auc,-1.0,2.91,glioma16,300,2
+60_NearestNeighbors,Nearest Neighbors,auc,-1.0,2.56,glioma16,300,2
+25_LightGBM,LightGBM,auc,-0.5,2.53,glioma16,300,2
+16_Xgboost,Xgboost,auc,-1.0,2.66,glioma16,300,2
+34_CatBoost,CatBoost,auc,-1.0,2.81,glioma16,300,2
+43_RandomForest,Random Forest,auc,-0.5,2.96,glioma16,300,2
+52_ExtraTrees,Extra Trees,auc,-0.5,2.92,glioma16,300,2
+61_NearestNeighbors,Nearest Neighbors,auc,-1.0,2.6,glioma16,300,2
+26_LightGBM,LightGBM,auc,-1.0,2.7,glioma16,300,2
+17_Xgboost,Xgboost,auc,-0.5,2.65,glioma16,300,2
+35_CatBoost,CatBoost,auc,-1.0,2.82,glioma16,300,2
+44_RandomForest,Random Forest,auc,-0.5,2.99,glioma16,300,2
+53_ExtraTrees,Extra Trees,auc,-0.5,3.02,glioma16,300,2
+62_NearestNeighbors,Nearest Neighbors,auc,-1.0,2.65,glioma16,300,2
+27_LightGBM,LightGBM,auc,-1.0,2.89,glioma16,300,2
+18_Xgboost,Xgboost,auc,-0.5,2.76,glioma16,300,2
+36_CatBoost,CatBoost,auc,-1.0,3.03,glioma16,300,2
+45_RandomForest,Random Forest,auc,-0.5,3.02,glioma16,300,2
+54_ExtraTrees,Extra Trees,auc,-1.0,3.05,glioma16,300,2
+28_LightGBM,LightGBM,auc,-0.5,2.91,glioma16,300,2
+19_Xgboost,Xgboost,auc,-0.5,2.73,glioma16,300,2
+37_CatBoost,CatBoost,auc,-1.0,2.92,glioma16,300,2
+46_RandomForest,Random Forest,auc,-0.5,3.19,glioma16,300,2
+55_ExtraTrees,Extra Trees,auc,-0.5,3.02,glioma16,300,2
+1_DecisionTree_GoldenFeatures,Decision Tree,auc,-1.0,2.94,glioma16,300,2
+4_Linear_GoldenFeatures,Linear,auc,-1.0,2.76,glioma16,300,2
+6_Default_Xgboost_GoldenFeatures,Xgboost,auc,-1.0,2.88,glioma16,300,2
+1_DecisionTree_KMeansFeatures,Decision Tree,auc,-0.8333333333333334,3.0,glioma16,300,2
+4_Linear_KMeansFeatures,Linear,auc,-1.0,3.03,glioma16,300,2
+6_Default_Xgboost_KMeansFeatures,Xgboost,auc,-1.0,3.13,glioma16,300,2
+1_DecisionTree_RandomFeature,Decision Tree,auc,-1.0,3.52,glioma16,300,2
+6_Default_Xgboost_SelectedFeatures,Xgboost,auc,-1.0,2.87,glioma16,300,2
+5_Default_LightGBM_SelectedFeatures,LightGBM,auc,-1.0,2.85,glioma16,300,2
+7_Default_CatBoost_SelectedFeatures,CatBoost,auc,-1.0,2.96,glioma16,300,2
+47_ExtraTrees_SelectedFeatures,Extra Trees,auc,-1.0,3.46,glioma16,300,2
+42_RandomForest_SelectedFeatures,Random Forest,auc,-1.0,3.39,glioma16,300,2
+63_DecisionTree,Decision Tree,auc,-0.6666666666666667,2.93,glioma16,300,2
+64_DecisionTree,Decision Tree,auc,-1.0,2.78,glioma16,300,2
+65_Xgboost,Xgboost,auc,-1.0,2.94,glioma16,300,2
+66_LightGBM,LightGBM,auc,-1.0,2.86,glioma16,300,2
+67_LightGBM,LightGBM,auc,-1.0,2.95,glioma16,300,2
+68_CatBoost,CatBoost,auc,-1.0,3.23,glioma16,300,2
+69_CatBoost,CatBoost,auc,-1.0,3.07,glioma16,300,2
+70_ExtraTrees,Extra Trees,auc,-1.0,3.37,glioma16,300,2
+71_ExtraTrees,Extra Trees,auc,-1.0,3.29,glioma16,300,2
+72_ExtraTrees,Extra Trees,auc,-1.0,3.56,glioma16,300,2
+73_CatBoost,CatBoost,auc,-1.0,3.23,glioma16,300,2
+74_CatBoost,CatBoost,auc,-1.0,3.44,glioma16,300,2
+75_LightGBM,LightGBM,auc,-1.0,3.17,glioma16,300,2
+76_Xgboost,Xgboost,auc,-1.0,3.03,glioma16,300,2
+77_Xgboost,Xgboost,auc,-1.0,3.04,glioma16,300,2
+78_LightGBM,LightGBM,auc,-1.0,2.99,glioma16,300,2
+79_LightGBM,LightGBM,auc,-1.0,3.01,glioma16,300,2
+80_LightGBM,LightGBM,auc,-1.0,3.25,glioma16,300,2
+81_Xgboost,Xgboost,auc,-1.0,3.08,glioma16,300,2
+82_Xgboost,Xgboost,auc,-1.0,3.21,glioma16,300,2
+83_CatBoost,CatBoost,auc,-1.0,3.18,glioma16,300,2
+Ensemble,Ensemble,auc,-1.0,24.01,glioma16,300,2
+1_DecisionTree,Decision Tree,auc,-0.8333333333333334,5.51,glioma16,300,3
+2_DecisionTree,Decision Tree,auc,-0.8333333333333334,2.56,glioma16,300,3
+3_DecisionTree,Decision Tree,auc,-0.8333333333333334,2.73,glioma16,300,3
+4_Linear,Linear,auc,-0.6666666666666667,2.61,glioma16,300,3
+5_Default_LightGBM,LightGBM,auc,-0.8333333333333334,2.66,glioma16,300,3
+6_Default_Xgboost,Xgboost,auc,-1.0,2.75,glioma16,300,3
+7_Default_CatBoost,CatBoost,auc,-1.0,3.0,glioma16,300,3
+8_Default_RandomForest,Random Forest,auc,-0.5,3.02,glioma16,300,3
+9_Default_ExtraTrees,Extra Trees,auc,-0.8333333333333334,3.02,glioma16,300,3
+10_Default_NearestNeighbors,Nearest Neighbors,auc,-0.8333333333333334,2.79,glioma16,300,3
+20_LightGBM,LightGBM,auc,-0.5,2.8,glioma16,300,3
+11_Xgboost,Xgboost,auc,-0.5,2.7,glioma16,300,3
+29_CatBoost,CatBoost,auc,-1.0,2.96,glioma16,300,3
+38_RandomForest,Random Forest,auc,-0.5,3.15,glioma16,300,3
+47_ExtraTrees,Extra Trees,auc,-1.0,3.22,glioma16,300,3
+56_NearestNeighbors,Nearest Neighbors,auc,-0.8333333333333334,2.95,glioma16,300,3
+21_LightGBM,LightGBM,auc,-0.8333333333333334,2.78,glioma16,300,3
+12_Xgboost,Xgboost,auc,-1.0,2.93,glioma16,300,3
+30_CatBoost,CatBoost,auc,-1.0,3.02,glioma16,300,3
+39_RandomForest,Random Forest,auc,-0.5,3.1,glioma16,300,3
+48_ExtraTrees,Extra Trees,auc,-0.5,3.15,glioma16,300,3
+57_NearestNeighbors,Nearest Neighbors,auc,-0.8333333333333334,2.83,glioma16,300,3
+22_LightGBM,LightGBM,auc,-0.8333333333333334,2.86,glioma16,300,3
+13_Xgboost,Xgboost,auc,-1.0,2.9,glioma16,300,3
+31_CatBoost,CatBoost,auc,-1.0,3.02,glioma16,300,3
+40_RandomForest,Random Forest,auc,-0.5,3.14,glioma16,300,3
+49_ExtraTrees,Extra Trees,auc,-0.5,3.26,glioma16,300,3
+58_NearestNeighbors,Nearest Neighbors,auc,-0.8333333333333334,2.85,glioma16,300,3
+23_LightGBM,LightGBM,auc,-0.5,2.81,glioma16,300,3
+14_Xgboost,Xgboost,auc,-0.5,3.08,glioma16,300,3
+32_CatBoost,CatBoost,auc,-1.0,3.22,glioma16,300,3
+41_RandomForest,Random Forest,auc,-0.5,3.56,glioma16,300,3
+50_ExtraTrees,Extra Trees,auc,-0.5,3.22,glioma16,300,3
+59_NearestNeighbors,Nearest Neighbors,auc,-0.8333333333333334,2.98,glioma16,300,3
+24_LightGBM,LightGBM,auc,-1.0,3.08,glioma16,300,3
+15_Xgboost,Xgboost,auc,-0.5,3.15,glioma16,300,3
+33_CatBoost,CatBoost,auc,-1.0,3.13,glioma16,300,3
+42_RandomForest,Random Forest,auc,-1.0,3.41,glioma16,300,3
+51_ExtraTrees,Extra Trees,auc,-1.0,3.39,glioma16,300,3
+60_NearestNeighbors,Nearest Neighbors,auc,-0.8333333333333334,3.1,glioma16,300,3
+25_LightGBM,LightGBM,auc,-0.5,2.89,glioma16,300,3
+16_Xgboost,Xgboost,auc,-1.0,3.06,glioma16,300,3
+34_CatBoost,CatBoost,auc,-1.0,3.17,glioma16,300,3
+43_RandomForest,Random Forest,auc,-0.5,3.31,glioma16,300,3
+52_ExtraTrees,Extra Trees,auc,-0.5,3.37,glioma16,300,3
+61_NearestNeighbors,Nearest Neighbors,auc,-0.8333333333333334,2.99,glioma16,300,3
+26_LightGBM,LightGBM,auc,-0.8333333333333334,3.01,glioma16,300,3
+17_Xgboost,Xgboost,auc,-0.5,3.1,glioma16,300,3
+35_CatBoost,CatBoost,auc,-1.0,3.49,glioma16,300,3
+44_RandomForest,Random Forest,auc,-0.5,3.61,glioma16,300,3
+53_ExtraTrees,Extra Trees,auc,-0.5,3.35,glioma16,300,3
+62_NearestNeighbors,Nearest Neighbors,auc,-0.8333333333333334,3.04,glioma16,300,3
+27_LightGBM,LightGBM,auc,-0.9166666666666667,3.29,glioma16,300,3
+18_Xgboost,Xgboost,auc,-0.5,3.51,glioma16,300,3
+36_CatBoost,CatBoost,auc,-1.0,3.7,glioma16,300,3
+7_Default_CatBoost_GoldenFeatures,CatBoost,auc,-1.0,10.48,glioma16,300,3
+6_Default_Xgboost_GoldenFeatures,Xgboost,auc,-0.8333333333333334,3.4,glioma16,300,3
+7_Default_CatBoost_KMeansFeatures,CatBoost,auc,-1.0,3.4,glioma16,300,3
+6_Default_Xgboost_KMeansFeatures,Xgboost,auc,-1.0,3.34,glioma16,300,3
+29_CatBoost_KMeansFeatures,CatBoost,auc,-1.0,3.66,glioma16,300,3
+7_Default_CatBoost_RandomFeature,CatBoost,auc,-1.0,3.45,glioma16,300,3
+7_Default_CatBoost_SelectedFeatures,CatBoost,auc,-1.0,3.33,glioma16,300,3
+6_Default_Xgboost_SelectedFeatures,Xgboost,auc,-1.0,3.26,glioma16,300,3
+47_ExtraTrees_SelectedFeatures,Extra Trees,auc,-1.0,3.62,glioma16,300,3
+42_RandomForest_SelectedFeatures,Random Forest,auc,-1.0,3.59,glioma16,300,3
+24_LightGBM_SelectedFeatures,LightGBM,auc,-1.0,3.2,glioma16,300,3
+63_CatBoost,CatBoost,auc,-1.0,3.37,glioma16,300,3
+64_CatBoost,CatBoost,auc,-1.0,3.44,glioma16,300,3
+65_Xgboost,Xgboost,auc,-1.0,3.41,glioma16,300,3
+66_Xgboost,Xgboost,auc,-1.0,3.37,glioma16,300,3
+67_CatBoost,CatBoost,auc,-1.0,3.72,glioma16,300,3
+68_ExtraTrees,Extra Trees,auc,-1.0,3.56,glioma16,300,3
+69_CatBoost,CatBoost,auc,-1.0,3.47,glioma16,300,3
+70_Xgboost,Xgboost,auc,-1.0,3.31,glioma16,300,3
+71_Xgboost,Xgboost,auc,-1.0,3.35,glioma16,300,3
+72_Xgboost,Xgboost,auc,-1.0,3.38,glioma16,300,3
+73_CatBoost,CatBoost,auc,-1.0,3.75,glioma16,300,3
+74_CatBoost,CatBoost,auc,-1.0,3.69,glioma16,300,3
+75_CatBoost,CatBoost,auc,-1.0,3.51,glioma16,300,3
+76_ExtraTrees,Extra Trees,auc,-1.0,3.64,glioma16,300,3
+77_ExtraTrees,Extra Trees,auc,-0.5,3.63,glioma16,300,3
+78_CatBoost,CatBoost,auc,-1.0,3.57,glioma16,300,3
+79_Xgboost,Xgboost,auc,-1.0,3.53,glioma16,300,3
+Ensemble,Ensemble,auc,-1.0,18.65,glioma16,300,3
+1_DecisionTree,Decision Tree,logloss,0.18828845024108887,5.63,robot-failure-lp1,60,0
+2_DecisionTree,Decision Tree,logloss,1.1920930376163597e-07,2.08,robot-failure-lp1,60,0
+3_DecisionTree,Decision Tree,logloss,0.15403281152248383,2.13,robot-failure-lp1,60,0
+4_Linear,Linear,logloss,2.5514583587646484,2.18,robot-failure-lp1,60,0
+5_Default_LightGBM,LightGBM,logloss,0.0027452372014522552,2.53,robot-failure-lp1,60,0
+6_Default_Xgboost,Xgboost,logloss,0.07045132666826248,2.53,robot-failure-lp1,60,0
+16_LightGBM,LightGBM,logloss,0.04759319871664047,2.53,robot-failure-lp1,60,0
+7_Xgboost,Xgboost,logloss,0.6492801904678345,2.54,robot-failure-lp1,60,0
+25_CatBoost,CatBoost,logloss,0.05472786724567413,35.75,robot-failure-lp1,60,0
+Ensemble,Ensemble,logloss,1.1920930376163597e-07,0.36,robot-failure-lp1,60,0
+1_DecisionTree,Decision Tree,logloss,0.4800153970718384,4.09,robot-failure-lp1,60,1
+2_DecisionTree,Decision Tree,logloss,1.950202465057373,0.66,robot-failure-lp1,60,1
+3_DecisionTree,Decision Tree,logloss,1.950202465057373,0.67,robot-failure-lp1,60,1
+4_Linear,Linear,logloss,1.5140626430511475,0.76,robot-failure-lp1,60,1
+5_Default_LightGBM,LightGBM,logloss,0.47587740421295166,0.87,robot-failure-lp1,60,1
+6_Default_Xgboost,Xgboost,logloss,0.30711090564727783,1.05,robot-failure-lp1,60,1
+7_Default_CatBoost,CatBoost,logloss,0.3631044924259186,1.25,robot-failure-lp1,60,1
+8_Default_RandomForest,Random Forest,logloss,0.5704720616340637,1.21,robot-failure-lp1,60,1
+9_Default_ExtraTrees,Extra Trees,logloss,0.3801535964012146,1.19,robot-failure-lp1,60,1
+10_Default_NearestNeighbors,Nearest Neighbors,logloss,0.4959634244441986,0.83,robot-failure-lp1,60,1
+20_LightGBM,LightGBM,logloss,0.5219151973724365,0.86,robot-failure-lp1,60,1
+11_Xgboost,Xgboost,logloss,0.669891357421875,1.22,robot-failure-lp1,60,1
+29_CatBoost,CatBoost,logloss,0.3599132299423218,1.92,robot-failure-lp1,60,1
+38_RandomForest,Random Forest,logloss,0.6681315302848816,1.27,robot-failure-lp1,60,1
+47_ExtraTrees,Extra Trees,logloss,0.4292517900466919,1.32,robot-failure-lp1,60,1
+56_NearestNeighbors,Nearest Neighbors,logloss,0.21631263196468353,0.85,robot-failure-lp1,60,1
+21_LightGBM,LightGBM,logloss,0.48279449343681335,0.94,robot-failure-lp1,60,1
+12_Xgboost,Xgboost,logloss,0.31867459416389465,1.03,robot-failure-lp1,60,1
+30_CatBoost,CatBoost,logloss,0.38678237795829773,1.9,robot-failure-lp1,60,1
+39_RandomForest,Random Forest,logloss,1.0247273445129395,1.58,robot-failure-lp1,60,1
+48_ExtraTrees,Extra Trees,logloss,0.6032734513282776,1.26,robot-failure-lp1,60,1
+57_NearestNeighbors,Nearest Neighbors,logloss,0.6603896617889404,0.93,robot-failure-lp1,60,1
+22_LightGBM,LightGBM,logloss,0.49470266699790955,0.98,robot-failure-lp1,60,1
+13_Xgboost,Xgboost,logloss,0.30566152930259705,1.02,robot-failure-lp1,60,1
+31_CatBoost,CatBoost,logloss,0.2916482985019684,1.48,robot-failure-lp1,60,1
+56_NearestNeighbors_GoldenFeatures,Nearest Neighbors,logloss,0.21990394592285156,5.26,robot-failure-lp1,60,1
+58_NearestNeighbors,Nearest Neighbors,logloss,0.2574600875377655,0.93,robot-failure-lp1,60,1
+59_NearestNeighbors_GoldenFeatures,Nearest Neighbors,logloss,0.2609778642654419,0.94,robot-failure-lp1,60,1
+60_CatBoost,CatBoost,logloss,0.3155793249607086,1.76,robot-failure-lp1,60,1
+61_CatBoost,CatBoost,logloss,0.3591178357601166,1.45,robot-failure-lp1,60,1
+62_Xgboost,Xgboost,logloss,0.4066709578037262,1.11,robot-failure-lp1,60,1
+63_Xgboost,Xgboost,logloss,0.34452900290489197,1.13,robot-failure-lp1,60,1
+64_Xgboost,Xgboost,logloss,0.3486488163471222,1.11,robot-failure-lp1,60,1
+65_NearestNeighbors,Nearest Neighbors,logloss,0.28918781876564026,0.96,robot-failure-lp1,60,1
+66_NearestNeighbors_GoldenFeatures,Nearest Neighbors,logloss,0.33423951268196106,0.99,robot-failure-lp1,60,1
+67_CatBoost,CatBoost,logloss,0.44828760623931885,1.22,robot-failure-lp1,60,1
+68_Xgboost,Xgboost,logloss,0.3165718913078308,1.16,robot-failure-lp1,60,1
+Ensemble,Ensemble,logloss,0.215889111161232,5.19,robot-failure-lp1,60,1
+1_DecisionTree,Decision Tree,logloss,1.1920930376163597e-07,1.16,robot-failure-lp1,60,2
+2_DecisionTree,Decision Tree,logloss,1.1920930376163597e-07,1.03,robot-failure-lp1,60,2
+3_DecisionTree,Decision Tree,logloss,1.1920930376163597e-07,0.98,robot-failure-lp1,60,2
+4_Linear,Linear,logloss,0.8153138160705566,1.11,robot-failure-lp1,60,2
+5_Default_LightGBM,LightGBM,logloss,0.006131866946816444,1.35,robot-failure-lp1,60,2
+6_Default_Xgboost,Xgboost,logloss,0.24483391642570496,1.36,robot-failure-lp1,60,2
+7_Default_CatBoost,CatBoost,logloss,0.0015147291123867035,18.07,robot-failure-lp1,60,2
+17_LightGBM,LightGBM,logloss,0.010004108771681786,1.4,robot-failure-lp1,60,2
+8_Xgboost,Xgboost,logloss,0.6160209774971008,1.29,robot-failure-lp1,60,2
+26_CatBoost,CatBoost,logloss,0.0030449111945927143,35.88,robot-failure-lp1,60,2
+Ensemble,Ensemble,logloss,1.1920930376163597e-07,0.42,robot-failure-lp1,60,2
+1_DecisionTree,Decision Tree,logloss,0.034255798906087875,1.57,robot-failure-lp1,60,3
+2_DecisionTree,Decision Tree,logloss,1.771376132965088,0.68,robot-failure-lp1,60,3
+3_DecisionTree,Decision Tree,logloss,1.1920930376163597e-07,0.67,robot-failure-lp1,60,3
+4_Linear,Linear,logloss,2.094075918197632,0.8,robot-failure-lp1,60,3
+5_Default_LightGBM,LightGBM,logloss,9.323894482804462e-05,1.21,robot-failure-lp1,60,3
+6_Default_Xgboost,Xgboost,logloss,0.02753647416830063,1.14,robot-failure-lp1,60,3
+7_Default_CatBoost,CatBoost,logloss,0.002040353137999773,17.93,robot-failure-lp1,60,3
+17_LightGBM,LightGBM,logloss,0.00030747230630367994,1.18,robot-failure-lp1,60,3
+8_Xgboost,Xgboost,logloss,0.6140627264976501,1.06,robot-failure-lp1,60,3
+26_CatBoost,CatBoost,logloss,0.0033351308666169643,35.82,robot-failure-lp1,60,3
+Ensemble,Ensemble,logloss,1.1920930376163597e-07,0.53,robot-failure-lp1,60,3
+1_DecisionTree,Decision Tree,logloss,2.5628347396850586,1.79,robot-failure-lp1,300,0
+2_DecisionTree,Decision Tree,logloss,3.0512616634368896,1.51,robot-failure-lp1,300,0
+3_DecisionTree,Decision Tree,logloss,2.6805083751678467,1.56,robot-failure-lp1,300,0
+4_Linear,Linear,logloss,0.9914957284927368,2.02,robot-failure-lp1,300,0
+5_Default_LightGBM,LightGBM,logloss,0.2855410873889923,2.74,robot-failure-lp1,300,0
+6_Default_Xgboost,Xgboost,logloss,0.2705305516719818,3.84,robot-failure-lp1,300,0
+7_Default_CatBoost,CatBoost,logloss,0.23935441672801971,26.31,robot-failure-lp1,300,0
+8_Default_RandomForest,Random Forest,logloss,0.748754620552063,4.52,robot-failure-lp1,300,0
+9_Default_ExtraTrees,Extra Trees,logloss,0.5509001016616821,4.3,robot-failure-lp1,300,0
+10_Default_NearestNeighbors,Nearest Neighbors,logloss,1.8502894639968872,2.46,robot-failure-lp1,300,0
+20_LightGBM,LightGBM,logloss,0.22326041758060455,3.1,robot-failure-lp1,300,0
+11_Xgboost,Xgboost,logloss,0.832022488117218,3.83,robot-failure-lp1,300,0
+29_CatBoost,CatBoost,logloss,0.2343815714120865,56.12,robot-failure-lp1,300,0
+38_RandomForest,Random Forest,logloss,0.7547053098678589,4.83,robot-failure-lp1,300,0
+47_ExtraTrees,Extra Trees,logloss,0.56138676404953,5.4,robot-failure-lp1,300,0
+56_NearestNeighbors,Nearest Neighbors,logloss,1.8574142456054688,2.58,robot-failure-lp1,300,0
+21_LightGBM,LightGBM,logloss,0.26849281787872314,3.39,robot-failure-lp1,300,0
+12_Xgboost,Xgboost,logloss,0.24793970584869385,4.14,robot-failure-lp1,300,0
+20_LightGBM_GoldenFeatures,LightGBM,logloss,0.2731724977493286,14.23,robot-failure-lp1,300,0
+20_LightGBM_KMeansFeatures,LightGBM,logloss,0.10945352166891098,4.03,robot-failure-lp1,300,0
+7_Default_CatBoost_KMeansFeatures,CatBoost,logloss,0.14653845131397247,29.02,robot-failure-lp1,300,0
+57_LightGBM,LightGBM,logloss,0.14909589290618896,4.09,robot-failure-lp1,300,0
+58_LightGBM,LightGBM,logloss,0.1422952562570572,4.36,robot-failure-lp1,300,0
+59_CatBoost,CatBoost,logloss,0.1375122368335724,91.93,robot-failure-lp1,300,0
+Ensemble,Ensemble,logloss,0.1065499410033226,2.09,robot-failure-lp1,300,0
+1_DecisionTree,Decision Tree,logloss,1.9299163818359375,2.74,robot-failure-lp1,300,1
+2_DecisionTree,Decision Tree,logloss,2.443791151046753,2.4,robot-failure-lp1,300,1
+3_DecisionTree,Decision Tree,logloss,3.3691210746765137,2.41,robot-failure-lp1,300,1
+4_Linear,Linear,logloss,0.9520840048789978,3.21,robot-failure-lp1,300,1
+5_Default_LightGBM,LightGBM,logloss,0.4439966082572937,3.54,robot-failure-lp1,300,1
+6_Default_Xgboost,Xgboost,logloss,0.415481299161911,4.61,robot-failure-lp1,300,1
+7_Default_CatBoost,CatBoost,logloss,0.2977353036403656,6.65,robot-failure-lp1,300,1
+8_Default_RandomForest,Random Forest,logloss,0.7818573117256165,7.01,robot-failure-lp1,300,1
+9_Default_ExtraTrees,Extra Trees,logloss,0.5656967163085938,6.23,robot-failure-lp1,300,1
+10_Default_NearestNeighbors,Nearest Neighbors,logloss,1.9623637199401855,3.25,robot-failure-lp1,300,1
+20_LightGBM,LightGBM,logloss,0.4100947678089142,3.58,robot-failure-lp1,300,1
+11_Xgboost,Xgboost,logloss,0.8451347947120667,4.16,robot-failure-lp1,300,1
+29_CatBoost,CatBoost,logloss,0.28220951557159424,13.12,robot-failure-lp1,300,1
+38_RandomForest,Random Forest,logloss,0.8070951700210571,6.12,robot-failure-lp1,300,1
+47_ExtraTrees,Extra Trees,logloss,0.529370903968811,5.33,robot-failure-lp1,300,1
+56_NearestNeighbors,Nearest Neighbors,logloss,2.007585287094116,3.51,robot-failure-lp1,300,1
+21_LightGBM,LightGBM,logloss,0.43449637293815613,3.63,robot-failure-lp1,300,1
+12_Xgboost,Xgboost,logloss,0.3528544306755066,4.57,robot-failure-lp1,300,1
+30_CatBoost,CatBoost,logloss,0.30720385909080505,19.39,robot-failure-lp1,300,1
+39_RandomForest,Random Forest,logloss,1.3791418075561523,7.89,robot-failure-lp1,300,1
+48_ExtraTrees,Extra Trees,logloss,0.7824901342391968,5.75,robot-failure-lp1,300,1
+57_NearestNeighbors,Nearest Neighbors,logloss,2.100337266921997,3.57,robot-failure-lp1,300,1
+22_LightGBM,LightGBM,logloss,0.3566007912158966,3.85,robot-failure-lp1,300,1
+13_Xgboost,Xgboost,logloss,0.36661213636398315,4.76,robot-failure-lp1,300,1
+31_CatBoost,CatBoost,logloss,0.25679245591163635,16.58,robot-failure-lp1,300,1
+40_RandomForest,Random Forest,logloss,1.3724918365478516,8.82,robot-failure-lp1,300,1
+49_ExtraTrees,Extra Trees,logloss,0.8387611508369446,6.41,robot-failure-lp1,300,1
+58_NearestNeighbors,Nearest Neighbors,logloss,2.099985122680664,3.86,robot-failure-lp1,300,1
+23_LightGBM,LightGBM,logloss,0.48954102396965027,3.7,robot-failure-lp1,300,1
+31_CatBoost_GoldenFeatures,CatBoost,logloss,0.30908069014549255,20.15,robot-failure-lp1,300,1
+31_CatBoost_KMeansFeatures,CatBoost,logloss,0.10155537724494934,77.97,robot-failure-lp1,300,1
+31_CatBoost_BoostOnErrors,CatBoost,logloss,0.2702164649963379,10.9,robot-failure-lp1,300,1
+Ensemble,Ensemble,logloss,0.10155537724494934,3.65,robot-failure-lp1,300,1
+1_DecisionTree,Decision Tree,logloss,1.1920930376163597e-07,1.47,robot-failure-lp1,300,2
+2_DecisionTree,Decision Tree,logloss,1.1920930376163597e-07,1.01,robot-failure-lp1,300,2
+3_DecisionTree,Decision Tree,logloss,1.1920930376163597e-07,1.12,robot-failure-lp1,300,2
+4_Linear,Linear,logloss,0.8153138160705566,1.1,robot-failure-lp1,300,2
+5_Default_LightGBM,LightGBM,logloss,0.006131866946816444,1.29,robot-failure-lp1,300,2
+6_Default_Xgboost,Xgboost,logloss,0.24483391642570496,1.34,robot-failure-lp1,300,2
+7_Default_CatBoost,CatBoost,logloss,0.0015147291123867035,17.95,robot-failure-lp1,300,2
+8_Default_RandomForest,Random Forest,logloss,0.524834394454956,1.5,robot-failure-lp1,300,2
+9_Default_ExtraTrees,Extra Trees,logloss,0.29066231846809387,1.69,robot-failure-lp1,300,2
+10_Default_NearestNeighbors,Nearest Neighbors,logloss,0.6630831956863403,1.11,robot-failure-lp1,300,2
+20_LightGBM,LightGBM,logloss,0.010004108771681786,1.41,robot-failure-lp1,300,2
+11_Xgboost,Xgboost,logloss,0.6160209774971008,1.37,robot-failure-lp1,300,2
+29_CatBoost,CatBoost,logloss,0.0031742346473038197,33.57,robot-failure-lp1,300,2
+38_RandomForest,Random Forest,logloss,0.43493783473968506,1.66,robot-failure-lp1,300,2
+47_ExtraTrees,Extra Trees,logloss,0.15235808491706848,1.61,robot-failure-lp1,300,2
+56_NearestNeighbors,Nearest Neighbors,logloss,1.771376132965088,1.18,robot-failure-lp1,300,2
+21_LightGBM,LightGBM,logloss,0.00883809756487608,1.35,robot-failure-lp1,300,2
+12_Xgboost,Xgboost,logloss,0.14225716888904572,1.33,robot-failure-lp1,300,2
+30_CatBoost,CatBoost,logloss,0.0023982159327715635,41.63,robot-failure-lp1,300,2
+39_RandomForest,Random Forest,logloss,1.0006999969482422,1.56,robot-failure-lp1,300,2
+48_ExtraTrees,Extra Trees,logloss,0.4700959622859955,1.53,robot-failure-lp1,300,2
+57_NearestNeighbors,Nearest Neighbors,logloss,0.8626042008399963,1.19,robot-failure-lp1,300,2
+22_LightGBM,LightGBM,logloss,0.05840596184134483,1.38,robot-failure-lp1,300,2
+13_Xgboost,Xgboost,logloss,0.20810231566429138,1.29,robot-failure-lp1,300,2
+31_CatBoost,CatBoost,logloss,0.0015787170268595219,26.98,robot-failure-lp1,300,2
+40_RandomForest,Random Forest,logloss,1.1097391843795776,1.82,robot-failure-lp1,300,2
+49_ExtraTrees,Extra Trees,logloss,0.5554431676864624,1.66,robot-failure-lp1,300,2
+58_NearestNeighbors,Nearest Neighbors,logloss,2.060563802719116,1.24,robot-failure-lp1,300,2
+23_LightGBM,LightGBM,logloss,0.09018092602491379,1.49,robot-failure-lp1,300,2
+14_Xgboost,Xgboost,logloss,1.3731516599655151,1.28,robot-failure-lp1,300,2
+32_CatBoost,CatBoost,logloss,0.01691829040646553,6.96,robot-failure-lp1,300,2
+41_RandomForest,Random Forest,logloss,0.7283260822296143,1.69,robot-failure-lp1,300,2
+50_ExtraTrees,Extra Trees,logloss,0.3495365381240845,1.57,robot-failure-lp1,300,2
+59_NearestNeighbors,Nearest Neighbors,logloss,2.060563802719116,1.29,robot-failure-lp1,300,2
+24_LightGBM,LightGBM,logloss,0.0026663371827453375,1.48,robot-failure-lp1,300,2
+15_Xgboost,Xgboost,logloss,0.31443071365356445,1.67,robot-failure-lp1,300,2
+33_CatBoost,CatBoost,logloss,0.003085359465330839,43.7,robot-failure-lp1,300,2
+60_DecisionTree,Decision Tree,logloss,1.1920930376163597e-07,1.19,robot-failure-lp1,300,2
+61_DecisionTree,Decision Tree,logloss,1.1920930376163597e-07,1.17,robot-failure-lp1,300,2
+62_DecisionTree,Decision Tree,logloss,1.1920930376163597e-07,1.25,robot-failure-lp1,300,2
+63_CatBoost,CatBoost,logloss,0.0029709115624427795,35.15,robot-failure-lp1,300,2
+64_CatBoost,CatBoost,logloss,0.002100669778883457,44.45,robot-failure-lp1,300,2
+Ensemble,Ensemble,logloss,1.1920930376163597e-07,6.27,robot-failure-lp1,300,2
+1_DecisionTree,Decision Tree,logloss,0.034255798906087875,1.84,robot-failure-lp1,300,3
+2_DecisionTree,Decision Tree,logloss,1.771376132965088,1.06,robot-failure-lp1,300,3
+3_DecisionTree,Decision Tree,logloss,1.1920930376163597e-07,1.07,robot-failure-lp1,300,3
+4_Linear,Linear,logloss,2.094075918197632,1.15,robot-failure-lp1,300,3
+5_Default_LightGBM,LightGBM,logloss,9.323894482804462e-05,1.48,robot-failure-lp1,300,3
+6_Default_Xgboost,Xgboost,logloss,0.02753647416830063,1.5,robot-failure-lp1,300,3
+7_Default_CatBoost,CatBoost,logloss,0.002040353137999773,18.01,robot-failure-lp1,300,3
+8_Default_RandomForest,Random Forest,logloss,0.4878881871700287,1.58,robot-failure-lp1,300,3
+9_Default_ExtraTrees,Extra Trees,logloss,0.17116063833236694,1.57,robot-failure-lp1,300,3
+10_Default_NearestNeighbors,Nearest Neighbors,logloss,0.5090504884719849,1.26,robot-failure-lp1,300,3
+20_LightGBM,LightGBM,logloss,0.00030747230630367994,1.49,robot-failure-lp1,300,3
+11_Xgboost,Xgboost,logloss,0.6140627264976501,1.4,robot-failure-lp1,300,3
+29_CatBoost,CatBoost,logloss,0.003258694428950548,37.75,robot-failure-lp1,300,3
+38_RandomForest,Random Forest,logloss,0.49451977014541626,1.64,robot-failure-lp1,300,3
+47_ExtraTrees,Extra Trees,logloss,0.3062274754047394,2.0,robot-failure-lp1,300,3
+56_NearestNeighbors,Nearest Neighbors,logloss,0.14931324124336243,1.25,robot-failure-lp1,300,3
+21_LightGBM,LightGBM,logloss,7.120196823962033e-05,1.54,robot-failure-lp1,300,3
+12_Xgboost,Xgboost,logloss,0.03236053138971329,1.51,robot-failure-lp1,300,3
+30_CatBoost,CatBoost,logloss,0.0067569660022854805,40.46,robot-failure-lp1,300,3
+39_RandomForest,Random Forest,logloss,0.9905505776405334,1.75,robot-failure-lp1,300,3
+48_ExtraTrees,Extra Trees,logloss,0.5614410638809204,1.68,robot-failure-lp1,300,3
+57_NearestNeighbors,Nearest Neighbors,logloss,0.59103924036026,1.29,robot-failure-lp1,300,3
+22_LightGBM,LightGBM,logloss,0.0004444382502697408,1.39,robot-failure-lp1,300,3
+13_Xgboost,Xgboost,logloss,0.028814056888222694,1.47,robot-failure-lp1,300,3
+31_CatBoost,CatBoost,logloss,0.006959947291761637,27.0,robot-failure-lp1,300,3
+40_RandomForest,Random Forest,logloss,1.1097391843795776,1.69,robot-failure-lp1,300,3
+49_ExtraTrees,Extra Trees,logloss,0.45142534375190735,1.8,robot-failure-lp1,300,3
+58_NearestNeighbors,Nearest Neighbors,logloss,0.33423948287963867,1.42,robot-failure-lp1,300,3
+23_LightGBM,LightGBM,logloss,0.17642006278038025,1.33,robot-failure-lp1,300,3
+14_Xgboost,Xgboost,logloss,1.3731516599655151,1.39,robot-failure-lp1,300,3
+32_CatBoost,CatBoost,logloss,0.0012585724471136928,17.79,robot-failure-lp1,300,3
+3_DecisionTree_GoldenFeatures,Decision Tree,logloss,1.1920930376163597e-07,12.46,robot-failure-lp1,300,3
+3_DecisionTree_KMeansFeatures,Decision Tree,logloss,1.1920930376163597e-07,1.39,robot-failure-lp1,300,3
+21_LightGBM_KMeansFeatures,LightGBM,logloss,0.00020547636086121202,1.67,robot-failure-lp1,300,3
+5_Default_LightGBM_KMeansFeatures,LightGBM,logloss,4.172503395238891e-05,1.69,robot-failure-lp1,300,3
+3_DecisionTree_RandomFeature,Decision Tree,logloss,1.1920930376163597e-07,2.44,robot-failure-lp1,300,3
+5_Default_LightGBM_KMeansFeatures_SelectedFeatures,LightGBM,logloss,6.068839502404444e-05,1.68,robot-failure-lp1,300,3
+32_CatBoost_SelectedFeatures,CatBoost,logloss,0.012826328165829182,2.62,robot-failure-lp1,300,3
+6_Default_Xgboost_SelectedFeatures,Xgboost,logloss,0.027044866234064102,1.77,robot-failure-lp1,300,3
+9_Default_ExtraTrees_SelectedFeatures,Extra Trees,logloss,0.4519463777542114,1.84,robot-failure-lp1,300,3
+8_Default_RandomForest_SelectedFeatures,Random Forest,logloss,0.47319895029067993,1.69,robot-failure-lp1,300,3
+59_DecisionTree,Decision Tree,logloss,0.15403281152248383,1.29,robot-failure-lp1,300,3
+60_DecisionTree_GoldenFeatures,Decision Tree,logloss,0.15403281152248383,1.31,robot-failure-lp1,300,3
+61_DecisionTree,Decision Tree,logloss,1.1920930376163597e-07,1.45,robot-failure-lp1,300,3
+62_LightGBM,LightGBM,logloss,0.001856823917478323,1.72,robot-failure-lp1,300,3
+63_LightGBM,LightGBM,logloss,3.7525744119193405e-05,1.75,robot-failure-lp1,300,3
+64_LightGBM_SelectedFeatures,LightGBM,logloss,0.00023267135838977993,1.71,robot-failure-lp1,300,3
+65_LightGBM_SelectedFeatures,LightGBM,logloss,0.0002655592979863286,1.91,robot-failure-lp1,300,3
+66_LightGBM,LightGBM,logloss,0.0008667029906064272,1.7,robot-failure-lp1,300,3
+67_LightGBM,LightGBM,logloss,0.0001473122974857688,1.71,robot-failure-lp1,300,3
+68_CatBoost,CatBoost,logloss,0.0019894628785550594,18.06,robot-failure-lp1,300,3
+69_CatBoost,CatBoost,logloss,0.001154189696535468,19.04,robot-failure-lp1,300,3
+70_DecisionTree,Decision Tree,logloss,0.07802536338567734,1.5,robot-failure-lp1,300,3
+71_LightGBM,LightGBM,logloss,3.225376713089645e-05,1.67,robot-failure-lp1,300,3
+72_LightGBM,LightGBM,logloss,4.6242545067798346e-05,1.77,robot-failure-lp1,300,3
+73_LightGBM_SelectedFeatures,LightGBM,logloss,4.493691449170001e-05,1.73,robot-failure-lp1,300,3
+74_Xgboost_SelectedFeatures,Xgboost,logloss,0.027044866234064102,1.91,robot-failure-lp1,300,3
+75_Xgboost_SelectedFeatures,Xgboost,logloss,0.027044866234064102,1.91,robot-failure-lp1,300,3
+76_Xgboost,Xgboost,logloss,0.02753647416830063,1.81,robot-failure-lp1,300,3
+77_Xgboost,Xgboost,logloss,0.02753647416830063,1.84,robot-failure-lp1,300,3
+78_Xgboost,Xgboost,logloss,0.028814056888222694,1.72,robot-failure-lp1,300,3
+79_Xgboost,Xgboost,logloss,0.028814056888222694,1.71,robot-failure-lp1,300,3
+80_ExtraTrees,Extra Trees,logloss,0.3613058924674988,2.06,robot-failure-lp1,300,3
+81_ExtraTrees,Extra Trees,logloss,0.3168656527996063,2.02,robot-failure-lp1,300,3
+Ensemble,Ensemble,logloss,1.1920930376163597e-07,13.99,robot-failure-lp1,300,3

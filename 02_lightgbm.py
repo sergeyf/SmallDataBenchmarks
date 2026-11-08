@@ -1,20 +1,17 @@
 """
-How does LightGBM compare?
+How does LightGBM compare? Tuned with hyperopt on inner 4-fold CV.
 """
 
-import time
-import pickle
-import numpy as np
-import lightgbm as lgb
 from functools import partial
-from sklearn.model_selection import RandomizedSearchCV
-from sklearn.metrics import roc_auc_score
-from sklearn.model_selection import cross_val_score, StratifiedKFold
-from hyperopt import hp, fmin, tpe, Trials, space_eval
-from hyperopt.pyll import scope
-from utils import load_data
 
-N_JOBS = 4 * 4 * 9
+import lightgbm as lgb
+import numpy as np
+from hyperopt import Trials, fmin, hp, space_eval, tpe
+from hyperopt.pyll import scope
+from sklearn.model_selection import StratifiedKFold, cross_val_score
+
+from utils import N_FOLDS, N_JOBS, fit_then_predict, run_benchmark
+
 N_ITER = 50  # budget for hyperparam search
 N_STARTUP_JOBS = 20  # hyperopt does a bunch of random evals first
 
@@ -22,6 +19,7 @@ HYPEROPT_SPACE = {
     "learning_rate": hp.choice("learning_rate", [0.1, 0.05, 0.01, 0.005, 0.001]),
     "num_leaves": scope.int(2 ** hp.quniform("num_leaves", 2, 7, 1)),
     "colsample_bytree": hp.quniform("colsample_bytree", 0.4, 1, 0.1),
+    # Inactive: LightGBM only bags rows when subsample_freq > 0. Kept as in 2020 so scores stay comparable.
     "subsample": hp.quniform("subsample", 0.4, 1, 0.1),
     "min_child_samples": scope.int(2 ** hp.quniform("min_child_samples", 0, 7, 1)),
     "min_child_weight": 10 ** hp.quniform("min_child_weight", -6, 0, 1),
@@ -31,92 +29,39 @@ HYPEROPT_SPACE = {
 }
 
 
-def define_and_evaluate_lightgbm_pipeline(X, y, random_state=0):
-    binary = len(set(y)) == 2
-    if binary:
-        lgb_model = lgb.LGBMClassifier(
-            objective="binary",
-            n_estimators=500,
-            metric="auc",
-            verbose=-1,
-            tree_learner="feature",
-            random_state=random_state,
-            silent=True,
-        )
-    else:
-        lgb_model = lgb.LGBMClassifier(
-            objective="multiclass",
-            n_estimators=500,
-            metric="auc_mu",
-            verbose=-1,
-            tree_learner="feature",
-            random_state=random_state,
-            silent=True,
-        )
-    nested_scores = []
-    outer_cv = StratifiedKFold(n_splits=4, shuffle=True, random_state=random_state)
-    for train_inds, test_inds in outer_cv.split(X, y):
-        X_train, y_train = X[train_inds, :], y[train_inds]
-        X_test, y_test = X[test_inds, :], y[test_inds]
+def fit(X_train, y_train, random_state):
+    # Same settings as the 2020 run; `silent` is gone from LightGBM 4 and verbose=-1 replaces it.
+    binary = len(set(y_train)) == 2
+    model = lgb.LGBMClassifier(
+        objective="binary" if binary else "multiclass",
+        n_estimators=500,
+        metric="auc" if binary else "auc_mu",
+        verbose=-1,
+        tree_learner="feature",
+        random_state=random_state,
+        n_jobs=N_JOBS // N_FOLDS,  # threads per model; the inner folds run in parallel
+    )
+    inner_cv = StratifiedKFold(n_splits=4, shuffle=True, random_state=random_state)
 
-        def obj(params):
-            lgb_model.set_params(**params)
-            inner_cv = StratifiedKFold(n_splits=4, shuffle=True, random_state=random_state)
-            scores = cross_val_score(
-                lgb_model, X=X_train, y=y_train, cv=inner_cv, scoring="roc_auc_ovr_weighted", n_jobs=N_JOBS
-            )
-            return -np.mean(scores)
+    def objective(params):
+        model.set_params(**params)
+        scores = cross_val_score(model, X_train, y_train, cv=inner_cv, scoring="roc_auc_ovr_weighted", n_jobs=N_FOLDS)
+        return -np.mean(scores)
 
-        trials = Trials()
-        _ = fmin(
-            fn=obj,
-            space=HYPEROPT_SPACE,
-            algo=partial(tpe.suggest, n_startup_jobs=N_STARTUP_JOBS),
-            max_evals=N_ITER,
-            trials=trials,
-            rstate=np.random.RandomState(random_state),
-        )
-        # hyperopt has some problems with hp.choice so we need to do this:
-        best_params = space_eval(HYPEROPT_SPACE, trials.argmin)
-        lgb_model.set_params(**best_params)
-        lgb_model.fit(X_train, y_train)
-        y_pred = lgb_model.predict_proba(X_test)
-        # same as roc_auc_ovr_weighted
-        if binary:
-            score = roc_auc_score(y_test, y_pred[:, 1], average="weighted", multi_class="ovr")
-        else:
-            score = roc_auc_score(y_test, y_pred, average="weighted", multi_class="ovr")
-        nested_scores.append(score)
-    return nested_scores
+    trials = Trials()
+    fmin(
+        fn=objective,
+        space=HYPEROPT_SPACE,
+        algo=partial(tpe.suggest, n_startup_jobs=N_STARTUP_JOBS),
+        max_evals=N_ITER,
+        trials=trials,
+        rstate=np.random.default_rng(random_state),
+        show_progressbar=False,
+    )
+    # hyperopt returns indices for hp.choice, so map them back to values.
+    model.set_params(**space_eval(HYPEROPT_SPACE, trials.argmin))
+    return model.fit(X_train, y_train)
 
 
-# run model on all datasets
-with open("results/01_compare_baseline_models.pickle", "rb") as f:
-    _, _, _, evaluated_datasets, _ = pickle.load(f)
-
-
-results = []
-times = []
-for i, dataset_name in enumerate(evaluated_datasets):
-    X, y = load_data(dataset_name)
-    np.random.seed(0)
-    if len(y) > 10000:
-        # subset to 10000 if too large
-        random_idx = np.random.choice(len(y), 10000, replace=False)
-        X = X[random_idx, :]
-        y = y[random_idx]
-    print("starting:", dataset_name, X.shape)
-    start = time.time()
-    nested_scores = define_and_evaluate_lightgbm_pipeline(X, y)
-    results.append(nested_scores)
-    elapsed = time.time() - start
-    times.append(elapsed)
-    print("done. elapsed:", elapsed)
-
-#
-results = np.array(results)
-times = np.array(times)
-
-# save everything to disk so we can make plots elsewhere
-with open(f"results/02_lightgbm_n_iter_{N_ITER}.pickle", "wb") as f:
-    pickle.dump((results, times), f)
+if __name__ == "__main__":
+    run_benchmark(f"lightgbm_hyperopt_{N_ITER}", fit_then_predict(fit))

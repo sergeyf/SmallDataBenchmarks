@@ -136,3 +136,6 @@ dmypy.json
 foo-*
 *.dat
 *.cpp
+
+scratch/
+results/2026/*.log
